@@ -12,14 +12,14 @@ namespace Yumaster.File.Data
         public static string concat(string strConSQL)
         {
             string strReturn = strConSQL;
-            //if (new QyCodeB().Db.CurrentConnectionConfig.DbType == SqlSugar.DbType.Sqlite)
-            //{
-            //    strReturn = strReturn.Replace("+", "||");
-            //}
-            //if (new QycodeB().Db.CurrentConnectionConfig.DbType == SqlSugar.DbType.MySql)
-            //{
-            //    strReturn = "CONCAT(" + strReturn.Replace('+', ',') + ")";
-            //}
+            if (new QyCodeB().Db.CurrentConnectionConfig.DbType == SqlSugar.DbType.Sqlite)
+            {
+                strReturn = strReturn.Replace("+", "||");
+            }
+            if (new QyCodeB().Db.CurrentConnectionConfig.DbType == SqlSugar.DbType.MySql)
+            {
+                strReturn = "CONCAT(" + strReturn.Replace('+', ',') + ")";
+            }
             return strReturn;
         }
         /// <summary>
@@ -49,9 +49,6 @@ namespace Yumaster.File.Data
 
             return strReturn;
         }
-
-
-
         public static string GetConfig(string strKey, string strDefault = "")
         {
             return ConfigurationManager.AppSettings[strKey] ?? strDefault;

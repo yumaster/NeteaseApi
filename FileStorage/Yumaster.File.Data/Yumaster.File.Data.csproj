@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEFDao.cs" />
+    <Compile Include="BLLData.cs" />
     <Compile Include="IBaseDao.cs" />
     <Compile Include="Model\AppSetting.cs" />
     <Compile Include="Model\Document.cs" />

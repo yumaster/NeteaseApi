@@ -32,6 +32,12 @@ namespace Yumaster.File.Data
             //};
         }
 
+        public virtual IEnumerable<T> GetAllEntities()
+        {
+            //AsNoTracking不记录数据变化状况
+            return CurrentDb.GetList();
+        }
+
         public virtual IEnumerable<T> GetEntities(Expression<Func<T, bool>> exp)
         {
             //AsNoTracking不记录数据变化状况
