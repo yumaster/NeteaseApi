@@ -35,7 +35,11 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SqlSugar, Version=5.0.0.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlSugar.5.0.0.13\lib\SqlSugar.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,10 +49,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEFDao.cs" />
+    <Compile Include="IBaseDao.cs" />
+    <Compile Include="Model\AppSetting.cs" />
+    <Compile Include="Model\Document.cs" />
+    <Compile Include="Model\File_Downhistory.cs" />
+    <Compile Include="Model\File_Info.cs" />
+    <Compile Include="Model\File_Share.cs" />
+    <Compile Include="Model\File_UserAuth.cs" />
+    <Compile Include="Model\File_UserTag.cs" />
+    <Compile Include="Model\File_Vesion.cs" />
+    <Compile Include="Model\Folder_Info.cs" />
+    <Compile Include="Model\HelpData.cs" />
+    <Compile Include="Model\QyCode.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlHelp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
