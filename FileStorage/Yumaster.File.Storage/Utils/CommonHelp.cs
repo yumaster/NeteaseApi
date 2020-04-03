@@ -18,7 +18,6 @@ namespace Yumaster.File.Storage
         {
             get
             {
-                //return "qijiekeji2016";
                 return "yumaster.net";
             }
         }

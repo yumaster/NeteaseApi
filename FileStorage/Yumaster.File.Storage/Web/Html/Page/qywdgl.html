@@ -281,6 +281,7 @@
                                     <select class="form-control chosen-select" id="squsers" ms-duplex="ShareData.ShareURL" multiple style="width:98%" data-placeholder="选择授权人员">
                                         <option ms-repeat-item="userlist" ms-attr-value="item.username">{{item.UserRealName}}</option>
                                     </select>
+                                    <!--<input type="hidden" id="REFTYPE" value="" />-->
                                 </div>
                             </div>
                             <span class="c999  text-blue-2 hidden"><a ms-click="cancelshouquan()" style="font-size: 14px">取消授权</a></span>
@@ -722,8 +723,9 @@
             if (tempindex.SelItemData.size() == 1) {
                 if ($("#squsers").val()) {
                     $.getJSON('/adminapi/ExeAction/SETAUTH', {
-                        P1: $("#squsers").val().join(),
-                        "P2": tempindex.SelItemData[0].ID
+                        "P1": $("#squsers").val().join(),
+                        "P2": tempindex.SelItemData[0].ID,
+                        "RefTypeStr": tempindex.SelItemData[0].FileExtendName ? "file" : "wj"
                     }, function (result) {
                         if (result.ErrorMsg == "") {
                             ComFunJS.winsuccess("授权成功");

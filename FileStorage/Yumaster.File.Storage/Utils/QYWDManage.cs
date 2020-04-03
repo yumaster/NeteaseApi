@@ -690,7 +690,7 @@ namespace Yumaster.File.Storage
         {
             string strAuthUsers = P1;
             int DataID = int.Parse(P2);
-            string RefType = context.Request("REFTYPE") == "file" ? "1" : "0";//默认文件夹
+            string RefType = context.Request("RefTypeStr") == "file" ? "1" : "0";//默认文件夹
             new File_UserAuthB().Delete(d => d.RefID == DataID && d.RefType == RefType && d.CRUser == UserInfo.User.username);
 
             File_UserAuth Model = new File_UserAuth();
@@ -731,8 +731,6 @@ namespace Yumaster.File.Storage
             }
             msg.Result = strUserS;
         }
-
-
 
         /// <summary>
         /// 获取内部共享来源

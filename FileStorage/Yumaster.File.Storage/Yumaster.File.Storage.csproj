@@ -136,61 +136,158 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Aliyun.OSS.dll" />
-    <Content Include="bin\Aliyun.OSS.pdb" />
     <Content Include="bin\Aspose.Cells.dll" />
     <Content Include="bin\Aspose.Pdf.dll" />
     <Content Include="bin\Aspose.Slides.dll" />
     <Content Include="bin\Aspose.Words.dll" />
-    <Content Include="bin\glTech.Log4netWrapper.dll" />
-    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
-    <Content Include="Web\CSS\animate.css" />
-    <Content Include="Web\CSS\BootOver.css" />
-    <Content Include="Web\CSS\bootstrap.css" />
-    <Content Include="Web\CSS\bootstrap.min.css" />
-    <Content Include="Web\CSS\default.css" />
-    <Content Include="Web\CSS\Doc.css" />
-    <Content Include="Web\CSS\index.css" />
-    <Content Include="Web\CSS\mp3.css" />
-    <Content Include="Web\CSS\msui.css" />
-    <Content Include="Web\CSS\ppt.css" />
-    <Content Include="Web\CSS\style.css" />
-    <Content Include="Web\CSS\szhlextend.css" />
-    <Content Include="Web\CSS\upstyle.css" />
-    <Content Include="Web\CSS\viewer.min.css" />
+    <Content Include="bin\ffmpeg.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\glTech.Log4netWrapper.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\qt-faststart.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\animate.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\BootOver.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\bootstrap.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\default.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\Doc.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\index.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\mp3.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\msui.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\ppt.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\szhlextend.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\upstyle.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\CSS\viewer.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\error.html" />
-    <Content Include="Web\Html\APP_ADD.html" />
-    <Content Include="Web\Html\FileShare.html" />
-    <Content Include="Web\Html\index.html" />
-    <Content Include="Web\Html\indexbz.html" />
-    <Content Include="Web\Html\indexex.html" />
-    <Content Include="Web\Html\IndexM.html" />
-    <Content Include="Web\Html\Loading.html" />
-    <Content Include="Web\Html\Page\appset.html" />
-    <Content Include="Web\Html\Page\bzview.html" />
-    <Content Include="Web\Html\Page\bzxxgl.html" />
-    <Content Include="Web\Html\Page\BZZX.html" />
-    <Content Include="Web\Html\Page\qygl.html" />
-    <Content Include="Web\Html\Page\qywd.html" />
-    <Content Include="Web\Html\Page\qywdgl.html" />
-    <Content Include="Web\Html\Page\qywdgx.html" />
-    <Content Include="Web\Html\Page\rzgl.html" />
-    <Content Include="Web\Html\Page\shouye.html" />
-    <Content Include="Web\Html\Page\wjgl.html" />
-    <Content Include="Web\Html\Page\xtpz.html" />
-    <Content Include="Web\Html\Page\yhgl.html" />
-    <Content Include="Web\Html\Test.html" />
-    <Content Include="Web\Html\Tools\01.jpg" />
-    <Content Include="Web\Html\Tools\APP_QYWD_SX.html" />
-    <Content Include="Web\Html\Tools\doc.html" />
-    <Content Include="Web\Html\Tools\DownFolder.html" />
-    <Content Include="Web\Html\Tools\DownFolderL.html" />
-    <Content Include="Web\Html\Tools\fileupload.html" />
-    <Content Include="Web\Html\Tools\FolderSel.html" />
-    <Content Include="Web\Html\Tools\jaudio.js" />
-    <Content Include="Web\Html\Tools\mp3.html" />
-    <Content Include="Web\Html\Tools\Share.html" />
-    <Content Include="Web\Html\Tools\showvideo.html" />
+    <Content Include="Web\Html\APP_ADD.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\FileShare.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\indexbz.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\indexex.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\IndexM.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Loading.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\appset.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\bzview.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\bzxxgl.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\BZZX.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\qygl.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\qywd.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\qywdgl.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\qywdgx.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\rzgl.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\shouye.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\wjgl.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\xtpz.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Page\yhgl.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Test.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\01.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\APP_QYWD_SX.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\doc.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\DownFolder.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\DownFolderL.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\fileupload.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\FolderSel.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\jaudio.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\mp3.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\Share.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\Html\Tools\showvideo.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\images\125sd.jpg" />
     <Content Include="Web\images\bbb.jpg" />
     <Content Include="Web\images\bg.png" />
@@ -205,39 +302,105 @@
     <Content Include="Web\images\icon-2.png" />
     <Content Include="Web\images\icon-3.png" />
     <Content Include="Web\images\icon-4.png" />
-    <Content Include="Web\images\icon\CCXJ.png" />
-    <Content Include="Web\images\icon\Common.png" />
-    <Content Include="Web\images\icon\CRM.png" />
-    <Content Include="Web\images\icon\DBRW.png" />
-    <Content Include="Web\images\icon\DCGL.png" />
-    <Content Include="Web\images\icon\DXGL.png" />
-    <Content Include="Web\images\icon\GZBG.png" />
-    <Content Include="Web\images\icon\HYGL.png" />
-    <Content Include="Web\images\icon\Info.jpg" />
-    <Content Include="Web\images\icon\JFBX.png" />
-    <Content Include="Web\images\icon\KDDY.png" />
-    <Content Include="Web\images\icon\KDGL.png" />
-    <Content Include="Web\images\icon\KQGL.png" />
-    <Content Include="Web\images\icon\KSGL.png" />
-    <Content Include="Web\images\icon\LCSP.png" />
-    <Content Include="Web\images\icon\NOTE.png" />
-    <Content Include="Web\images\icon\PXGL.png" />
-    <Content Include="Web\images\icon\QYHD.png" />
-    <Content Include="Web\images\icon\QYIM.png" />
-    <Content Include="Web\images\icon\QYTX.png" />
-    <Content Include="Web\images\icon\QYWD.png" />
-    <Content Include="Web\images\icon\RCTX.png" />
-    <Content Include="Web\images\icon\RLZY.png" />
-    <Content Include="Web\images\icon\RWGL.png" />
-    <Content Include="Web\images\icon\TSSQ.png" />
-    <Content Include="Web\images\icon\TXSX.png" />
-    <Content Include="Web\images\icon\WQQD.png" />
-    <Content Include="Web\images\icon\WTFK.png" />
-    <Content Include="Web\images\icon\XMGL.png" />
-    <Content Include="Web\images\icon\XTGL.png" />
-    <Content Include="Web\images\icon\XXFB.png" />
-    <Content Include="Web\images\icon\YCGL.png" />
-    <Content Include="Web\images\icon\ZHBG.png" />
+    <Content Include="Web\images\icon\CCXJ.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\Common.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\CRM.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\DBRW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\DCGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\DXGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\GZBG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\HYGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\Info.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\JFBX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\KDDY.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\KDGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\KQGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\KSGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\LCSP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\NOTE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\PXGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\QYHD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\QYIM.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\QYTX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\QYWD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\RCTX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\RLZY.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\RWGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\TSSQ.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\TXSX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\WQQD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\WTFK.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\XMGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\XTGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\XXFB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\YCGL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\icon\ZHBG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\images\ico_pay.png" />
     <Content Include="Web\images\l.png" />
     <Content Include="Web\images\logo.png" />
@@ -254,65 +417,175 @@
     <Content Include="Web\images\qrcode.png" />
     <Content Include="Web\images\qyh.png" />
     <Content Include="Web\images\qyhlogo.png" />
-    <Content Include="Web\images\qywd\AI.png" />
-    <Content Include="Web\images\qywd\AVI.png" />
-    <Content Include="Web\images\qywd\bf.png" />
-    <Content Include="Web\images\qywd\BMP.png" />
-    <Content Include="Web\images\qywd\CAB.png" />
-    <Content Include="Web\images\qywd\DOC.png" />
-    <Content Include="Web\images\qywd\DOCX.png" />
-    <Content Include="Web\images\qywd\DVD.png" />
-    <Content Include="Web\images\qywd\exe.png" />
-    <Content Include="Web\images\qywd\file.png" />
-    <Content Include="Web\images\qywd\file1.png" />
-    <Content Include="Web\images\qywd\Folder.png" />
-    <Content Include="Web\images\qywd\GIF.png" />
-    <Content Include="Web\images\qywd\gz.png" />
-    <Content Include="Web\images\qywd\hand.png" />
-    <Content Include="Web\images\qywd\HTML.png" />
-    <Content Include="Web\images\qywd\ICO.png" />
-    <Content Include="Web\images\qywd\JAVA.png" />
-    <Content Include="Web\images\qywd\JPG.png" />
-    <Content Include="Web\images\qywd\MP3.png" />
-    <Content Include="Web\images\qywd\MP4.png" />
-    <Content Include="Web\images\qywd\PDF.png" />
-    <Content Include="Web\images\qywd\PNG.png" />
-    <Content Include="Web\images\qywd\PPT.png" />
-    <Content Include="Web\images\qywd\PPTX.png" />
-    <Content Include="Web\images\qywd\PSD.png" />
-    <Content Include="Web\images\qywd\RAR.png" />
-    <Content Include="Web\images\qywd\swf.png" />
-    <Content Include="Web\images\qywd\tb.png" />
-    <Content Include="Web\images\qywd\TXT.png" />
-    <Content Include="Web\images\qywd\tz1.png" />
-    <Content Include="Web\images\qywd\tz2.png" />
-    <Content Include="Web\images\qywd\WAV.png" />
-    <Content Include="Web\images\qywd\wd.png" />
-    <Content Include="Web\images\qywd\wd1.png" />
-    <Content Include="Web\images\qywd\wd2.png" />
-    <Content Include="Web\images\qywd\wd3.png" />
-    <Content Include="Web\images\qywd\wd4.png" />
-    <Content Include="Web\images\qywd\WMA.png" />
-    <Content Include="Web\images\qywd\WMV.png" />
-    <Content Include="Web\images\qywd\XLS.png" />
-    <Content Include="Web\images\qywd\XLSX.png" />
-    <Content Include="Web\images\qywd\XML.png" />
-    <Content Include="Web\images\qywd\ZIP.png" />
+    <Content Include="Web\images\qywd\AI.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\AVI.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\bf.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\BMP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\CAB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\DOC.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\DOCX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\DVD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\exe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\file.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\file1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\Folder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\GIF.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\gz.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\hand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\HTML.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\ICO.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\JAVA.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\JPG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\MP3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\MP4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\PDF.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\PNG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\PPT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\PPTX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\PSD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\RAR.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\swf.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\tb.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\TXT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\tz1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\tz2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\WAV.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\wd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\wd1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\wd2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\wd3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\wd4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\WMA.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\WMV.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\XLS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\XLSX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\XML.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\qywd\ZIP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\images\rgqyh.png" />
     <Content Include="Web\images\scicon.png" />
     <Content Include="Web\images\script.png" />
     <Content Include="Web\images\searchTip.png" />
-    <Content Include="Web\images\skin\1.jpg" />
-    <Content Include="Web\images\skin\2.jpg" />
-    <Content Include="Web\images\skin\skin1.png" />
-    <Content Include="Web\images\skin\skin2.png" />
-    <Content Include="Web\images\skin\skin3.png" />
-    <Content Include="Web\images\skin\skin4.png" />
-    <Content Include="Web\images\skin\skin5.png" />
-    <Content Include="Web\images\skin\skin6.jpg" />
-    <Content Include="Web\images\skin\skin7.JPG" />
-    <Content Include="Web\images\skin\skin8.jpg" />
-    <Content Include="Web\images\skin\yc.png" />
+    <Content Include="Web\images\skin\1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\skin1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\skin2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\skin3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\skin4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\skin5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\skin6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\skin7.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\skin8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\images\skin\yc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\images\sprite.png" />
     <Content Include="Web\images\time-z.png" />
     <Content Include="Web\images\tk_exam.png" />
@@ -343,10 +616,18 @@
     <Content Include="Web\images\yd\yes1.png" />
     <Content Include="Web\images\yd\yes2.png" />
     <Content Include="Web\images\yd\yes3.png" />
-    <Content Include="Web\js\ADDJS.js" />
-    <Content Include="Web\js\avalon1.47.js" />
-    <Content Include="Web\js\bootstrap.js" />
-    <Content Include="Web\js\bootstrap.min.js" />
+    <Content Include="Web\js\ADDJS.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\avalon1.47.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\bootstrap.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\bootstrap.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\js\chosen\chosen-sprite%402x.png" />
     <Content Include="Web\js\chosen\chosen-sprite.png" />
     <Content Include="Web\js\chosen\chosen.css" />
@@ -373,14 +654,30 @@
     <Content Include="Web\js\ckplayer\index.html" />
     <Content Include="Web\js\ckplayer\sample\h5.html" />
     <Content Include="Web\js\ckplayer\sample\ios.html" />
-    <Content Include="Web\js\clipboard.js" />
-    <Content Include="Web\js\contextmenu.js" />
-    <Content Include="Web\js\fullteem_doc.js" />
-    <Content Include="Web\js\index.js" />
-    <Content Include="Web\js\indexbz.js" />
-    <Content Include="Web\js\jquery-1.11.1.min.js" />
-    <Content Include="Web\js\jquery.lazyload.min.js" />
-    <Content Include="Web\js\jquery.qrcode.min.js" />
+    <Content Include="Web\js\clipboard.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\contextmenu.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\fullteem_doc.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\index.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\indexbz.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\jquery-1.11.1.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\jquery.lazyload.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\jquery.qrcode.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\js\layer\extend\layer.ext.js" />
     <Content Include="Web\js\layer\layer.js" />
     <Content Include="Web\js\layer\skin\default\icon - 副本.png" />
@@ -399,9 +696,15 @@
     <Content Include="Web\js\player\swfobject.js" />
     <Content Include="Web\js\range\range.css" />
     <Content Include="Web\js\range\range.js" />
-    <Content Include="Web\js\SZHLCommon.js" />
-    <Content Include="Web\js\timego.js" />
-    <Content Include="Web\js\toastr.js" />
+    <Content Include="Web\js\SZHLCommon.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\timego.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\toastr.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\js\ueditor\dialogs\anchor\anchor.html" />
     <Content Include="Web\js\ueditor\dialogs\attachment\attachment.css" />
     <Content Include="Web\js\ueditor\dialogs\attachment\attachment.html" />
@@ -736,8 +1039,12 @@
     <Content Include="Web\js\umeditor\umeditor.config.js" />
     <Content Include="Web\js\umeditor\umeditor.js" />
     <Content Include="Web\js\umeditor\umeditor.min.js" />
-    <Content Include="Web\js\viewer-jquery.min.js" />
-    <Content Include="Web\js\zoomify.js" />
+    <Content Include="Web\js\viewer-jquery.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\js\zoomify.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web\login.html" />
     <Content Include="Web\qj_upload.js" />
     <Content Include="Web\qj_upload.min.js" />

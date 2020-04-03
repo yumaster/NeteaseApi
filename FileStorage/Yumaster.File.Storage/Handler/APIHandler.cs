@@ -145,7 +145,7 @@ namespace Yumaster.File.Storage.Handler
             {
                 string strUser = Context.Request.Form["user"];
                 string Secret = Context.Request.Form["Secret"];
-                string strlotusSecret = CommonHelp.GetConfig("lotusSecret", "www.qijiekeji.com");
+                string strlotusSecret = CommonHelp.GetConfig("lotusSecret", "yumaster.net");
                 Logger.LogError("用户" + strUser + strlotusSecret + "获取Code" + Secret);
                 if (Secret == strlotusSecret)
                 {
@@ -184,6 +184,7 @@ namespace Yumaster.File.Storage.Handler
                 string PostData = "";
                 string P1 = JsonData["P1"] == null ? "" : JsonData["P1"].ToString();
                 string P2 = JsonData["P2"] == null ? "" : JsonData["P2"].ToString();
+
                 string strAction = p.action;
 
 
