@@ -109,6 +109,8 @@
     <Compile Include="Utils\MD5Util.cs" />
     <Compile Include="Utils\OfficeUtil.cs" />
     <Compile Include="Utils\PathUtil.cs" />
+    <Compile Include="Utils\PubManage.cs" />
+    <Compile Include="Utils\QYWDManage.cs" />
     <Compile Include="Utils\ResponseExtension.cs" />
     <Compile Include="Utils\RestBootstrapper.cs" />
   </ItemGroup>

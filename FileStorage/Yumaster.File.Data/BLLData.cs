@@ -306,6 +306,6 @@ namespace Yumaster.File.Data
     public class File_UserAuthB : BaseEFDao<File_UserAuth> { }
     public class File_UserTagB : BaseEFDao<File_UserTag> { }
     public class File_VesionB : BaseEFDao<File_Vesion> { }
-    public class HelpDataB : BaseEFDao<HelpDataB> { }
+    public class HelpDataB : BaseEFDao<HelpData> { }
     #endregion
 }

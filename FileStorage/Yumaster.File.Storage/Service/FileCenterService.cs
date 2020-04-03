@@ -5,7 +5,6 @@ using System.Diagnostics;
 using System.ServiceProcess;
 using System.Threading;
 using Yumaster.File.Data;
-using Yumaster.File.Storage.Utils;
 
 namespace Yumaster.File.Storage.Service
 {

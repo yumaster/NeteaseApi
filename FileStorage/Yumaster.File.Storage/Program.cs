@@ -4,7 +4,6 @@ using System;
 using System.ServiceProcess;
 using Yumaster.File.Data;
 using Yumaster.File.Storage.Service;
-using Yumaster.File.Storage.Utils;
 
 namespace Yumaster.File.Storage
 {

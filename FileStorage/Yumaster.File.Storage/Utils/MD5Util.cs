@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography;
-namespace Yumaster.File.Storage.Utils
+namespace Yumaster.File.Storage
 {
     public static class MD5Util
     {

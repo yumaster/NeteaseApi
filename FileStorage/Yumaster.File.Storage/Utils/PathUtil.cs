@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yumaster.File.Storage.Utils
+namespace Yumaster.File.Storage
 {
     public class PathUtil
     {

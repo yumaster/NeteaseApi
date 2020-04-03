@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Yumaster.File.Data;
-namespace Yumaster.File.Storage.Utils
+namespace Yumaster.File.Storage
 {
     #region 将word文档转换为图片
     public class OfficeConverter

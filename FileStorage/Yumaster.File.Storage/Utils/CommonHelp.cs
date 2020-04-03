@@ -10,7 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Yumaster.File.Storage.Utils
+namespace Yumaster.File.Storage
 {
     public class CommonHelp
     {
