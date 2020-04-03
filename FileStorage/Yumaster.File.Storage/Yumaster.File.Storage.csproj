@@ -116,6 +116,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Config\log4netService.config" />
+    <None Include="bin\FileCenter.db" />
+    <None Include="bin\System.Data.SQLite.dll.config" />
+    <None Include="bin\Web\js\chosen\bower.json" />
+    <None Include="bin\Web\js\ckplayer\ckplayer\hls\LICENSE" />
+    <None Include="bin\Web\js\ueditor\third-party\jquery-1.10.2.min.map" />
+    <None Include="bin\Web\js\ueditor\third-party\video-js\font\vjs.eot" />
+    <None Include="bin\Web\js\ueditor\third-party\video-js\font\vjs.ttf" />
+    <None Include="bin\Web\js\ueditor\third-party\video-js\font\vjs.woff" />
+    <None Include="bin\Web\upload.min.js.map" />
+    <None Include="bin\Web\webuploader\README.md" />
+    <None Include="bin\Yumaster.File.Data.dll.config" />
+    <None Include="bin\Yumaster.File.Storage.exe.config" />
     <None Include="Config\log4netService.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -136,158 +149,702 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Aliyun.OSS.dll" />
+    <Content Include="bin\Aliyun.OSS.pdb" />
     <Content Include="bin\Aspose.Cells.dll" />
     <Content Include="bin\Aspose.Pdf.dll" />
     <Content Include="bin\Aspose.Slides.dll" />
     <Content Include="bin\Aspose.Words.dll" />
-    <Content Include="bin\ffmpeg.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\glTech.Log4netWrapper.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\qt-faststart.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\animate.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\BootOver.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\bootstrap.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\bootstrap.min.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\default.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\Doc.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\index.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\mp3.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\msui.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\ppt.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\style.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\szhlextend.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\upstyle.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\CSS\viewer.min.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="bin\ffmpeg.exe" />
+    <Content Include="bin\glTech.Log4netWrapper.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\log4net.dll" />
+    <Content Include="bin\log4net.xml" />
+    <Content Include="bin\Logs\FileStorage20200403.txt" />
+    <Content Include="bin\Nancy.dll" />
+    <Content Include="bin\Nancy.Hosting.Self.dll" />
+    <Content Include="bin\Nancy.Hosting.Self.xml" />
+    <Content Include="bin\Nancy.xml" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\qt-faststart.exe" />
+    <Content Include="bin\SqlSugar.dll" />
+    <Content Include="bin\System.Data.SQLite.dll" />
+    <Content Include="bin\System.Data.SQLite.xml" />
+    <Content Include="bin\Web\CSS\animate.css" />
+    <Content Include="bin\Web\CSS\BootOver.css" />
+    <Content Include="bin\Web\CSS\bootstrap.css" />
+    <Content Include="bin\Web\CSS\bootstrap.min.css" />
+    <Content Include="bin\Web\CSS\default.css" />
+    <Content Include="bin\Web\CSS\Doc.css" />
+    <Content Include="bin\Web\CSS\index.css" />
+    <Content Include="bin\Web\CSS\mp3.css" />
+    <Content Include="bin\Web\CSS\msui.css" />
+    <Content Include="bin\Web\CSS\ppt.css" />
+    <Content Include="bin\Web\CSS\style.css" />
+    <Content Include="bin\Web\CSS\szhlextend.css" />
+    <Content Include="bin\Web\CSS\upstyle.css" />
+    <Content Include="bin\Web\CSS\viewer.min.css" />
+    <Content Include="bin\Web\error.html" />
+    <Content Include="bin\Web\Html\APP_ADD.html" />
+    <Content Include="bin\Web\Html\FileShare.html" />
+    <Content Include="bin\Web\Html\index.html" />
+    <Content Include="bin\Web\Html\indexbz.html" />
+    <Content Include="bin\Web\Html\indexex.html" />
+    <Content Include="bin\Web\Html\IndexM.html" />
+    <Content Include="bin\Web\Html\Loading.html" />
+    <Content Include="bin\Web\Html\Page\appset.html" />
+    <Content Include="bin\Web\Html\Page\bzview.html" />
+    <Content Include="bin\Web\Html\Page\bzxxgl.html" />
+    <Content Include="bin\Web\Html\Page\BZZX.html" />
+    <Content Include="bin\Web\Html\Page\qygl.html" />
+    <Content Include="bin\Web\Html\Page\qywd.html" />
+    <Content Include="bin\Web\Html\Page\qywdgl.html" />
+    <Content Include="bin\Web\Html\Page\qywdgx.html" />
+    <Content Include="bin\Web\Html\Page\rzgl.html" />
+    <Content Include="bin\Web\Html\Page\shouye.html" />
+    <Content Include="bin\Web\Html\Page\wjgl.html" />
+    <Content Include="bin\Web\Html\Page\xtpz.html" />
+    <Content Include="bin\Web\Html\Page\yhgl.html" />
+    <Content Include="bin\Web\Html\Test.html" />
+    <Content Include="bin\Web\Html\Tools\01.jpg" />
+    <Content Include="bin\Web\Html\Tools\APP_QYWD_SX.html" />
+    <Content Include="bin\Web\Html\Tools\doc.html" />
+    <Content Include="bin\Web\Html\Tools\DownFolder.html" />
+    <Content Include="bin\Web\Html\Tools\DownFolderL.html" />
+    <Content Include="bin\Web\Html\Tools\fileupload.html" />
+    <Content Include="bin\Web\Html\Tools\FolderSel.html" />
+    <Content Include="bin\Web\Html\Tools\jaudio.js" />
+    <Content Include="bin\Web\Html\Tools\mp3.html" />
+    <Content Include="bin\Web\Html\Tools\Share.html" />
+    <Content Include="bin\Web\Html\Tools\showvideo.html" />
+    <Content Include="bin\Web\images\125sd.jpg" />
+    <Content Include="bin\Web\images\bbb.jpg" />
+    <Content Include="bin\Web\images\bg.png" />
+    <Content Include="bin\Web\images\bg1.jpg" />
+    <Content Include="bin\Web\images\c-wj.png" />
+    <Content Include="bin\Web\images\c-wjj.png" />
+    <Content Include="bin\Web\images\checked.png" />
+    <Content Include="bin\Web\images\group.png" />
+    <Content Include="bin\Web\images\guidebg.png" />
+    <Content Include="bin\Web\images\head.jpg" />
+    <Content Include="bin\Web\images\icon-1.png" />
+    <Content Include="bin\Web\images\icon-2.png" />
+    <Content Include="bin\Web\images\icon-3.png" />
+    <Content Include="bin\Web\images\icon-4.png" />
+    <Content Include="bin\Web\images\icon\CCXJ.png" />
+    <Content Include="bin\Web\images\icon\Common.png" />
+    <Content Include="bin\Web\images\icon\CRM.png" />
+    <Content Include="bin\Web\images\icon\DBRW.png" />
+    <Content Include="bin\Web\images\icon\DCGL.png" />
+    <Content Include="bin\Web\images\icon\DXGL.png" />
+    <Content Include="bin\Web\images\icon\GZBG.png" />
+    <Content Include="bin\Web\images\icon\HYGL.png" />
+    <Content Include="bin\Web\images\icon\Info.jpg" />
+    <Content Include="bin\Web\images\icon\JFBX.png" />
+    <Content Include="bin\Web\images\icon\KDDY.png" />
+    <Content Include="bin\Web\images\icon\KDGL.png" />
+    <Content Include="bin\Web\images\icon\KQGL.png" />
+    <Content Include="bin\Web\images\icon\KSGL.png" />
+    <Content Include="bin\Web\images\icon\LCSP.png" />
+    <Content Include="bin\Web\images\icon\NOTE.png" />
+    <Content Include="bin\Web\images\icon\PXGL.png" />
+    <Content Include="bin\Web\images\icon\QYHD.png" />
+    <Content Include="bin\Web\images\icon\QYIM.png" />
+    <Content Include="bin\Web\images\icon\QYTX.png" />
+    <Content Include="bin\Web\images\icon\QYWD.png" />
+    <Content Include="bin\Web\images\icon\RCTX.png" />
+    <Content Include="bin\Web\images\icon\RLZY.png" />
+    <Content Include="bin\Web\images\icon\RWGL.png" />
+    <Content Include="bin\Web\images\icon\TSSQ.png" />
+    <Content Include="bin\Web\images\icon\TXSX.png" />
+    <Content Include="bin\Web\images\icon\WQQD.png" />
+    <Content Include="bin\Web\images\icon\WTFK.png" />
+    <Content Include="bin\Web\images\icon\XMGL.png" />
+    <Content Include="bin\Web\images\icon\XTGL.png" />
+    <Content Include="bin\Web\images\icon\XXFB.png" />
+    <Content Include="bin\Web\images\icon\YCGL.png" />
+    <Content Include="bin\Web\images\icon\ZHBG.png" />
+    <Content Include="bin\Web\images\ico_pay.png" />
+    <Content Include="bin\Web\images\l.png" />
+    <Content Include="bin\Web\images\logo.png" />
+    <Content Include="bin\Web\images\m.png" />
+    <Content Include="bin\Web\images\open.png" />
+    <Content Include="bin\Web\images\paper.jpg" />
+    <Content Include="bin\Web\images\plus-add.png" />
+    <Content Include="bin\Web\images\plus-plus.png" />
+    <Content Include="bin\Web\images\plus-serch.png" />
+    <Content Include="bin\Web\images\plus-zhankai.png" />
+    <Content Include="bin\Web\images\plus-zhedie.png" />
+    <Content Include="bin\Web\images\plus_icon.png" />
+    <Content Include="bin\Web\images\qrcode.jpg" />
+    <Content Include="bin\Web\images\qrcode.png" />
+    <Content Include="bin\Web\images\qyh.png" />
+    <Content Include="bin\Web\images\qyhlogo.png" />
+    <Content Include="bin\Web\images\qywd\AI.png" />
+    <Content Include="bin\Web\images\qywd\AVI.png" />
+    <Content Include="bin\Web\images\qywd\bf.png" />
+    <Content Include="bin\Web\images\qywd\BMP.png" />
+    <Content Include="bin\Web\images\qywd\CAB.png" />
+    <Content Include="bin\Web\images\qywd\DOC.png" />
+    <Content Include="bin\Web\images\qywd\DOCX.png" />
+    <Content Include="bin\Web\images\qywd\DVD.png" />
+    <Content Include="bin\Web\images\qywd\exe.png" />
+    <Content Include="bin\Web\images\qywd\file.png" />
+    <Content Include="bin\Web\images\qywd\file1.png" />
+    <Content Include="bin\Web\images\qywd\Folder.png" />
+    <Content Include="bin\Web\images\qywd\GIF.png" />
+    <Content Include="bin\Web\images\qywd\gz.png" />
+    <Content Include="bin\Web\images\qywd\hand.png" />
+    <Content Include="bin\Web\images\qywd\HTML.png" />
+    <Content Include="bin\Web\images\qywd\ICO.png" />
+    <Content Include="bin\Web\images\qywd\JAVA.png" />
+    <Content Include="bin\Web\images\qywd\JPG.png" />
+    <Content Include="bin\Web\images\qywd\MP3.png" />
+    <Content Include="bin\Web\images\qywd\MP4.png" />
+    <Content Include="bin\Web\images\qywd\PDF.png" />
+    <Content Include="bin\Web\images\qywd\PNG.png" />
+    <Content Include="bin\Web\images\qywd\PPT.png" />
+    <Content Include="bin\Web\images\qywd\PPTX.png" />
+    <Content Include="bin\Web\images\qywd\PSD.png" />
+    <Content Include="bin\Web\images\qywd\RAR.png" />
+    <Content Include="bin\Web\images\qywd\swf.png" />
+    <Content Include="bin\Web\images\qywd\tb.png" />
+    <Content Include="bin\Web\images\qywd\TXT.png" />
+    <Content Include="bin\Web\images\qywd\tz1.png" />
+    <Content Include="bin\Web\images\qywd\tz2.png" />
+    <Content Include="bin\Web\images\qywd\WAV.png" />
+    <Content Include="bin\Web\images\qywd\wd.png" />
+    <Content Include="bin\Web\images\qywd\wd1.png" />
+    <Content Include="bin\Web\images\qywd\wd2.png" />
+    <Content Include="bin\Web\images\qywd\wd3.png" />
+    <Content Include="bin\Web\images\qywd\wd4.png" />
+    <Content Include="bin\Web\images\qywd\WMA.png" />
+    <Content Include="bin\Web\images\qywd\WMV.png" />
+    <Content Include="bin\Web\images\qywd\XLS.png" />
+    <Content Include="bin\Web\images\qywd\XLSX.png" />
+    <Content Include="bin\Web\images\qywd\XML.png" />
+    <Content Include="bin\Web\images\qywd\ZIP.png" />
+    <Content Include="bin\Web\images\rgqyh.png" />
+    <Content Include="bin\Web\images\scicon.png" />
+    <Content Include="bin\Web\images\script.png" />
+    <Content Include="bin\Web\images\searchTip.png" />
+    <Content Include="bin\Web\images\skin\1.jpg" />
+    <Content Include="bin\Web\images\skin\2.jpg" />
+    <Content Include="bin\Web\images\skin\skin1.png" />
+    <Content Include="bin\Web\images\skin\skin2.png" />
+    <Content Include="bin\Web\images\skin\skin3.png" />
+    <Content Include="bin\Web\images\skin\skin4.png" />
+    <Content Include="bin\Web\images\skin\skin5.png" />
+    <Content Include="bin\Web\images\skin\skin6.jpg" />
+    <Content Include="bin\Web\images\skin\skin7.JPG" />
+    <Content Include="bin\Web\images\skin\skin8.jpg" />
+    <Content Include="bin\Web\images\skin\yc.png" />
+    <Content Include="bin\Web\images\sprite.png" />
+    <Content Include="bin\Web\images\time-z.png" />
+    <Content Include="bin\Web\images\tk_exam.png" />
+    <Content Include="bin\Web\images\tuijian.gif" />
+    <Content Include="bin\Web\images\tx.png" />
+    <Content Include="bin\Web\images\tx1.gif" />
+    <Content Include="bin\Web\images\uncheck.png" />
+    <Content Include="bin\Web\images\xt-error.png" />
+    <Content Include="bin\Web\images\xt-right.png" />
+    <Content Include="bin\Web\images\xt-warning.png" />
+    <Content Include="bin\Web\images\yd\jt1.png" />
+    <Content Include="bin\Web\images\yd\jt2.png" />
+    <Content Include="bin\Web\images\yd\text2.png" />
+    <Content Include="bin\Web\images\yd\text3.png" />
+    <Content Include="bin\Web\images\yd\yd2.png" />
+    <Content Include="bin\Web\images\yd\ydpic1.png" />
+    <Content Include="bin\Web\images\yd\ydpic2.png" />
+    <Content Include="bin\Web\images\yd\ydpic3.png" />
+    <Content Include="bin\Web\images\yd\ydpic4.png" />
+    <Content Include="bin\Web\images\yd\ydpic5.png" />
+    <Content Include="bin\Web\images\yd\ydpic6.png" />
+    <Content Include="bin\Web\images\yd\ydtext1.png" />
+    <Content Include="bin\Web\images\yd\ydtext2.png" />
+    <Content Include="bin\Web\images\yd\ydtext3.png" />
+    <Content Include="bin\Web\images\yd\ydtext4.png" />
+    <Content Include="bin\Web\images\yd\ydtext5.png" />
+    <Content Include="bin\Web\images\yd\ydtext6.png" />
+    <Content Include="bin\Web\images\yd\yes1.png" />
+    <Content Include="bin\Web\images\yd\yes2.png" />
+    <Content Include="bin\Web\images\yd\yes3.png" />
+    <Content Include="bin\Web\js\ADDJS.js" />
+    <Content Include="bin\Web\js\avalon1.47.js" />
+    <Content Include="bin\Web\js\bootstrap.js" />
+    <Content Include="bin\Web\js\bootstrap.min.js" />
+    <Content Include="bin\Web\js\chosen\chosen-sprite%402x.png" />
+    <Content Include="bin\Web\js\chosen\chosen-sprite.png" />
+    <Content Include="bin\Web\js\chosen\chosen.css" />
+    <Content Include="bin\Web\js\chosen\chosen.jquery.js" />
+    <Content Include="bin\Web\js\chosen\chosen.jquery.min.js" />
+    <Content Include="bin\Web\js\chosen\chosen.min.css" />
+    <Content Include="bin\Web\js\chosen\docsupport\chosen.png" />
+    <Content Include="bin\Web\js\chosen\docsupport\event.simulate.js" />
+    <Content Include="bin\Web\js\chosen\docsupport\oss-credit.png" />
+    <Content Include="bin\Web\js\chosen\docsupport\prism.css" />
+    <Content Include="bin\Web\js\chosen\docsupport\prism.js" />
+    <Content Include="bin\Web\js\chosen\docsupport\style.css" />
+    <Content Include="bin\Web\js\chosen\index.html" />
+    <Content Include="bin\Web\js\chosen\options.html" />
+    <Content Include="bin\Web\js\ckplayer\ckplayer\ckplayer.js" />
+    <Content Include="bin\Web\js\ckplayer\ckplayer\ckplayer.min.js" />
+    <Content Include="bin\Web\js\ckplayer\ckplayer\ckplayer.swf" />
+    <Content Include="bin\Web\js\ckplayer\ckplayer\ckplayer.xml" />
+    <Content Include="bin\Web\js\ckplayer\ckplayer\hls\hls.js" />
+    <Content Include="bin\Web\js\ckplayer\ckplayer\hls\hls.min.js" />
+    <Content Include="bin\Web\js\ckplayer\ckplayer\language.xml" />
+    <Content Include="bin\Web\js\ckplayer\ckplayer\style.xml" />
+    <Content Include="bin\Web\js\ckplayer\crossdomain.xml" />
+    <Content Include="bin\Web\js\ckplayer\index.html" />
+    <Content Include="bin\Web\js\ckplayer\sample\h5.html" />
+    <Content Include="bin\Web\js\ckplayer\sample\ios.html" />
+    <Content Include="bin\Web\js\clipboard.js" />
+    <Content Include="bin\Web\js\contextmenu.js" />
+    <Content Include="bin\Web\js\fullteem_doc.js" />
+    <Content Include="bin\Web\js\index.js" />
+    <Content Include="bin\Web\js\indexbz.js" />
+    <Content Include="bin\Web\js\jquery-1.11.1.min.js" />
+    <Content Include="bin\Web\js\jquery.lazyload.min.js" />
+    <Content Include="bin\Web\js\jquery.qrcode.min.js" />
+    <Content Include="bin\Web\js\layer\extend\layer.ext.js" />
+    <Content Include="bin\Web\js\layer\layer.js" />
+    <Content Include="bin\Web\js\layer\skin\default\icon - 副本.png" />
+    <Content Include="bin\Web\js\layer\skin\default\icon-ext.png" />
+    <Content Include="bin\Web\js\layer\skin\default\icon.png" />
+    <Content Include="bin\Web\js\layer\skin\default\loading-0.gif" />
+    <Content Include="bin\Web\js\layer\skin\default\loading-1.gif" />
+    <Content Include="bin\Web\js\layer\skin\default\loading-2.gif" />
+    <Content Include="bin\Web\js\layer\skin\layer.css" />
+    <Content Include="bin\Web\js\layer\skin\layer.ext.css" />
+    <Content Include="bin\Web\js\laypage\laypage.js" />
+    <Content Include="bin\Web\js\laypage\skin\laypage.css" />
+    <Content Include="bin\Web\js\player\action.js" />
+    <Content Include="bin\Web\js\player\CuSunV3set.xml" />
+    <Content Include="bin\Web\js\player\player.swf" />
+    <Content Include="bin\Web\js\player\swfobject.js" />
+    <Content Include="bin\Web\js\range\range.css" />
+    <Content Include="bin\Web\js\range\range.js" />
+    <Content Include="bin\Web\js\SZHLCommon.js" />
+    <Content Include="bin\Web\js\timego.js" />
+    <Content Include="bin\Web\js\toastr.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\attachment.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_jpg.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\alignicon.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\alignicon.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\bg.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\file-icons.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\file-icons.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\icons.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\icons.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\image.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\progress.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\success.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\attachment\images\success.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\background\background.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\background\background.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\background\background.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\background\images\bg.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\background\images\success.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\chart.config.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\charts.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\charts.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\charts.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\images\charts0.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\images\charts1.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\images\charts2.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\images\charts3.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\images\charts4.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\charts\images\charts5.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\help\help.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\help\help.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\help\help.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\image.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\image.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\image.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\images\alignicon.jpg" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\images\bg.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\images\icons.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\images\icons.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\images\image.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\images\progress.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\images\success.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\image\images\success.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\internal.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\link\link.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\map\map.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\map\show.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\music\music.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\music\music.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\music\music.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\preview\preview.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\table\dragicon.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\table\edittable.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\table\edittable.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\table\edittable.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\table\edittd.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\table\edittip.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\config.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\template.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\template.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\template\template.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\bg.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\file-icons.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\file-icons.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\icons.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\icons.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\image.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\progress.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\success.gif" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\images\success.png" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\video.css" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\video.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\video\video.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="bin\Web\js\ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="bin\Web\js\ueditor\dialogs\wordimage\tangram.js" />
+    <Content Include="bin\Web\js\ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="bin\Web\js\ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="bin\Web\js\ueditor\index.html" />
+    <Content Include="bin\Web\js\ueditor\lang\en\en.js" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\addimage.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\background.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\button.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\copy.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\listbackground.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\localimage.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\music.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="bin\Web\js\ueditor\lang\en\images\upload.png" />
+    <Content Include="bin\Web\js\ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="bin\Web\js\ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="bin\Web\js\ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="bin\Web\js\ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="bin\Web\js\ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="bin\Web\js\ueditor\themes\default\css\ueditor.css" />
+    <Content Include="bin\Web\js\ueditor\themes\default\css\ueditor.min.css" />
+    <Content Include="bin\Web\js\ueditor\themes\default\dialogbase.css" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\anchor.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\arrow.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\arrow_down.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\arrow_up.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\charts.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\filescan.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\icons.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\icons.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\loaderror.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\loading.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\lock.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\scale.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\sortable.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\spacer.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\table-cell-align.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\upload.png" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\videologo.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\word.gif" />
+    <Content Include="bin\Web\js\ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="bin\Web\js\ueditor\themes\iframe.css" />
+    <Content Include="bin\Web\js\ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="bin\Web\js\ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\adapters\mootools-adapter.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\adapters\prototype-adapter.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\adapters\standalone-framework.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\highcharts-more.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\highcharts-more.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\highcharts.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\highcharts.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\annotations.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\annotations.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\canvas-tools.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\data.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\data.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\drilldown.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\drilldown.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\exporting.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\exporting.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\funnel.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\funnel.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\heatmap.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\heatmap.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\map.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\map.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\no-data-to-display.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\themes\dark-blue.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\themes\dark-green.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\themes\gray.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\themes\grid.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\highcharts\themes\skies.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\jquery-1.10.2.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\jquery-1.10.2.min.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="bin\Web\js\ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="bin\Web\js\ueditor\third-party\video-js\font\vjs.svg" />
+    <Content Include="bin\Web\js\ueditor\third-party\video-js\video-js.css" />
+    <Content Include="bin\Web\js\ueditor\third-party\video-js\video-js.min.css" />
+    <Content Include="bin\Web\js\ueditor\third-party\video-js\video-js.swf" />
+    <Content Include="bin\Web\js\ueditor\third-party\video-js\video.dev.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\video-js\video.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\Uploader.swf" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.css" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.custom.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.custom.min.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.flashonly.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.html5only.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.html5only.min.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.min.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.withoutimage.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="bin\Web\js\ueditor\third-party\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="bin\Web\js\ueditor\ueditor.all.js" />
+    <Content Include="bin\Web\js\ueditor\ueditor.all.min.js" />
+    <Content Include="bin\Web\js\ueditor\ueditor.config.js" />
+    <Content Include="bin\Web\js\ueditor\ueditor.parse.js" />
+    <Content Include="bin\Web\js\ueditor\ueditor.parse.min.js" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\emotion.css" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\emotion.js" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\0.gif" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="bin\Web\js\umeditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="bin\Web\js\umeditor\dialogs\formula\formula.css" />
+    <Content Include="bin\Web\js\umeditor\dialogs\formula\formula.html" />
+    <Content Include="bin\Web\js\umeditor\dialogs\formula\formula.js" />
+    <Content Include="bin\Web\js\umeditor\dialogs\formula\images\formula.png" />
+    <Content Include="bin\Web\js\umeditor\dialogs\image\image.css" />
+    <Content Include="bin\Web\js\umeditor\dialogs\image\image.js" />
+    <Content Include="bin\Web\js\umeditor\dialogs\image\images\close.png" />
+    <Content Include="bin\Web\js\umeditor\dialogs\image\images\upload1.png" />
+    <Content Include="bin\Web\js\umeditor\dialogs\image\images\upload2.png" />
+    <Content Include="bin\Web\js\umeditor\dialogs\link\link.js" />
+    <Content Include="bin\Web\js\umeditor\dialogs\map\map.html" />
+    <Content Include="bin\Web\js\umeditor\dialogs\map\map.js" />
+    <Content Include="bin\Web\js\umeditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="bin\Web\js\umeditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="bin\Web\js\umeditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="bin\Web\js\umeditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="bin\Web\js\umeditor\dialogs\video\video.css" />
+    <Content Include="bin\Web\js\umeditor\dialogs\video\video.js" />
+    <Content Include="bin\Web\js\umeditor\index.html" />
+    <Content Include="bin\Web\js\umeditor\lang\en\en.js" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\addimage.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\background.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\button.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\copy.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\deletedisable.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\deleteenable.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\imglabel.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\listbackground.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\localimage.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\music.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="bin\Web\js\umeditor\lang\en\images\upload.png" />
+    <Content Include="bin\Web\js\umeditor\lang\zh-cn\images\copy.png" />
+    <Content Include="bin\Web\js\umeditor\lang\zh-cn\images\imglabel.png" />
+    <Content Include="bin\Web\js\umeditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="bin\Web\js\umeditor\lang\zh-cn\images\music.png" />
+    <Content Include="bin\Web\js\umeditor\lang\zh-cn\images\upload.png" />
+    <Content Include="bin\Web\js\umeditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="bin\Web\js\umeditor\themes\default\css\umeditor.css" />
+    <Content Include="bin\Web\js\umeditor\themes\default\css\umeditor.min.css" />
+    <Content Include="bin\Web\js\umeditor\themes\default\images\caret.png" />
+    <Content Include="bin\Web\js\umeditor\themes\default\images\close.png" />
+    <Content Include="bin\Web\js\umeditor\themes\default\images\icons.gif" />
+    <Content Include="bin\Web\js\umeditor\themes\default\images\icons.png" />
+    <Content Include="bin\Web\js\umeditor\themes\default\images\ok.gif" />
+    <Content Include="bin\Web\js\umeditor\themes\default\images\pop-bg.png" />
+    <Content Include="bin\Web\js\umeditor\themes\default\images\spacer.gif" />
+    <Content Include="bin\Web\js\umeditor\themes\default\images\videologo.gif" />
+    <Content Include="bin\Web\js\umeditor\third-party\jquery.min.js" />
+    <Content Include="bin\Web\js\umeditor\umeditor.config.js" />
+    <Content Include="bin\Web\js\umeditor\umeditor.js" />
+    <Content Include="bin\Web\js\umeditor\umeditor.min.js" />
+    <Content Include="bin\Web\js\viewer-jquery.min.js" />
+    <Content Include="bin\Web\js\zoomify.js" />
+    <Content Include="bin\Web\login.html" />
+    <Content Include="bin\Web\qj_upload.js" />
+    <Content Include="bin\Web\qj_upload.min.js" />
+    <Content Include="bin\Web\upload.js" />
+    <Content Include="bin\Web\upload.min.js" />
+    <Content Include="bin\Web\webuploader\bg.png" />
+    <Content Include="bin\Web\webuploader\icons.png" />
+    <Content Include="bin\Web\webuploader\image.png" />
+    <Content Include="bin\Web\webuploader\progress.png" />
+    <Content Include="bin\Web\webuploader\success.png" />
+    <Content Include="bin\Web\webuploader\Uploader.swf" />
+    <Content Include="bin\Web\webuploader\webuploader.css" />
+    <Content Include="bin\Web\webuploader\webuploader.custom.js" />
+    <Content Include="bin\Web\webuploader\webuploader.custom.min.js" />
+    <Content Include="bin\Web\webuploader\webuploader.fis.js" />
+    <Content Include="bin\Web\webuploader\webuploader.flashonly.js" />
+    <Content Include="bin\Web\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="bin\Web\webuploader\webuploader.html5only.js" />
+    <Content Include="bin\Web\webuploader\webuploader.html5only.min.js" />
+    <Content Include="bin\Web\webuploader\webuploader.js" />
+    <Content Include="bin\Web\webuploader\webuploader.min.js" />
+    <Content Include="bin\Web\webuploader\webuploader.noimage.js" />
+    <Content Include="bin\Web\webuploader\webuploader.noimage.min.js" />
+    <Content Include="bin\Web\webuploader\webuploader.nolog.js" />
+    <Content Include="bin\Web\webuploader\webuploader.nolog.min.js" />
+    <Content Include="bin\Web\webuploader\webuploader.withoutimage.js" />
+    <Content Include="bin\Web\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="bin\x64\SQLite.Interop.dll" />
+    <Content Include="bin\x86\SQLite.Interop.dll" />
+    <Content Include="bin\Yumaster.File.Data.dll" />
+    <Content Include="bin\Yumaster.File.Data.pdb" />
+    <Content Include="bin\Yumaster.File.Storage.exe" />
+    <Content Include="bin\Yumaster.File.Storage.pdb" />
+    <Content Include="Web\CSS\animate.css" />
+    <Content Include="Web\CSS\BootOver.css" />
+    <Content Include="Web\CSS\bootstrap.css" />
+    <Content Include="Web\CSS\bootstrap.min.css" />
+    <Content Include="Web\CSS\default.css" />
+    <Content Include="Web\CSS\Doc.css" />
+    <Content Include="Web\CSS\index.css" />
+    <Content Include="Web\CSS\mp3.css" />
+    <Content Include="Web\CSS\msui.css" />
+    <Content Include="Web\CSS\ppt.css" />
+    <Content Include="Web\CSS\style.css" />
+    <Content Include="Web\CSS\szhlextend.css" />
+    <Content Include="Web\CSS\upstyle.css" />
+    <Content Include="Web\CSS\viewer.min.css" />
     <Content Include="Web\error.html" />
-    <Content Include="Web\Html\APP_ADD.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\FileShare.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\index.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\indexbz.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\indexex.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\IndexM.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Loading.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\appset.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\bzview.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\bzxxgl.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\BZZX.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\qygl.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\qywd.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\qywdgl.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\qywdgx.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\rzgl.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\shouye.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\wjgl.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\xtpz.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Page\yhgl.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Test.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\01.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\APP_QYWD_SX.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\doc.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\DownFolder.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\DownFolderL.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\fileupload.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\FolderSel.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\jaudio.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\mp3.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\Share.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\Html\Tools\showvideo.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Web\Html\APP_ADD.html" />
+    <Content Include="Web\Html\FileShare.html" />
+    <Content Include="Web\Html\index.html" />
+    <Content Include="Web\Html\indexbz.html" />
+    <Content Include="Web\Html\indexex.html" />
+    <Content Include="Web\Html\IndexM.html" />
+    <Content Include="Web\Html\Loading.html" />
+    <Content Include="Web\Html\Page\appset.html" />
+    <Content Include="Web\Html\Page\bzview.html" />
+    <Content Include="Web\Html\Page\bzxxgl.html" />
+    <Content Include="Web\Html\Page\BZZX.html" />
+    <Content Include="Web\Html\Page\qygl.html" />
+    <Content Include="Web\Html\Page\qywd.html" />
+    <Content Include="Web\Html\Page\qywdgl.html" />
+    <Content Include="Web\Html\Page\qywdgx.html" />
+    <Content Include="Web\Html\Page\rzgl.html" />
+    <Content Include="Web\Html\Page\shouye.html" />
+    <Content Include="Web\Html\Page\wjgl.html" />
+    <Content Include="Web\Html\Page\xtpz.html" />
+    <Content Include="Web\Html\Page\yhgl.html" />
+    <Content Include="Web\Html\Test.html" />
+    <Content Include="Web\Html\Tools\01.jpg" />
+    <Content Include="Web\Html\Tools\APP_QYWD_SX.html" />
+    <Content Include="Web\Html\Tools\doc.html" />
+    <Content Include="Web\Html\Tools\DownFolder.html" />
+    <Content Include="Web\Html\Tools\DownFolderL.html" />
+    <Content Include="Web\Html\Tools\fileupload.html" />
+    <Content Include="Web\Html\Tools\FolderSel.html" />
+    <Content Include="Web\Html\Tools\jaudio.js" />
+    <Content Include="Web\Html\Tools\mp3.html" />
+    <Content Include="Web\Html\Tools\Share.html" />
+    <Content Include="Web\Html\Tools\showvideo.html" />
     <Content Include="Web\images\125sd.jpg" />
     <Content Include="Web\images\bbb.jpg" />
     <Content Include="Web\images\bg.png" />
@@ -302,105 +859,39 @@
     <Content Include="Web\images\icon-2.png" />
     <Content Include="Web\images\icon-3.png" />
     <Content Include="Web\images\icon-4.png" />
-    <Content Include="Web\images\icon\CCXJ.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\Common.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\CRM.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\DBRW.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\DCGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\DXGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\GZBG.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\HYGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\Info.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\JFBX.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\KDDY.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\KDGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\KQGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\KSGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\LCSP.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\NOTE.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\PXGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\QYHD.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\QYIM.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\QYTX.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\QYWD.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\RCTX.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\RLZY.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\RWGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\TSSQ.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\TXSX.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\WQQD.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\WTFK.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\XMGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\XTGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\XXFB.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\YCGL.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\icon\ZHBG.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Web\images\icon\CCXJ.png" />
+    <Content Include="Web\images\icon\Common.png" />
+    <Content Include="Web\images\icon\CRM.png" />
+    <Content Include="Web\images\icon\DBRW.png" />
+    <Content Include="Web\images\icon\DCGL.png" />
+    <Content Include="Web\images\icon\DXGL.png" />
+    <Content Include="Web\images\icon\GZBG.png" />
+    <Content Include="Web\images\icon\HYGL.png" />
+    <Content Include="Web\images\icon\Info.jpg" />
+    <Content Include="Web\images\icon\JFBX.png" />
+    <Content Include="Web\images\icon\KDDY.png" />
+    <Content Include="Web\images\icon\KDGL.png" />
+    <Content Include="Web\images\icon\KQGL.png" />
+    <Content Include="Web\images\icon\KSGL.png" />
+    <Content Include="Web\images\icon\LCSP.png" />
+    <Content Include="Web\images\icon\NOTE.png" />
+    <Content Include="Web\images\icon\PXGL.png" />
+    <Content Include="Web\images\icon\QYHD.png" />
+    <Content Include="Web\images\icon\QYIM.png" />
+    <Content Include="Web\images\icon\QYTX.png" />
+    <Content Include="Web\images\icon\QYWD.png" />
+    <Content Include="Web\images\icon\RCTX.png" />
+    <Content Include="Web\images\icon\RLZY.png" />
+    <Content Include="Web\images\icon\RWGL.png" />
+    <Content Include="Web\images\icon\TSSQ.png" />
+    <Content Include="Web\images\icon\TXSX.png" />
+    <Content Include="Web\images\icon\WQQD.png" />
+    <Content Include="Web\images\icon\WTFK.png" />
+    <Content Include="Web\images\icon\XMGL.png" />
+    <Content Include="Web\images\icon\XTGL.png" />
+    <Content Include="Web\images\icon\XXFB.png" />
+    <Content Include="Web\images\icon\YCGL.png" />
+    <Content Include="Web\images\icon\ZHBG.png" />
     <Content Include="Web\images\ico_pay.png" />
     <Content Include="Web\images\l.png" />
     <Content Include="Web\images\logo.png" />
@@ -417,175 +908,65 @@
     <Content Include="Web\images\qrcode.png" />
     <Content Include="Web\images\qyh.png" />
     <Content Include="Web\images\qyhlogo.png" />
-    <Content Include="Web\images\qywd\AI.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\AVI.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\bf.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\BMP.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\CAB.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\DOC.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\DOCX.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\DVD.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\exe.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\file.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\file1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\Folder.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\GIF.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\gz.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\hand.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\HTML.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\ICO.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\JAVA.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\JPG.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\MP3.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\MP4.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\PDF.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\PNG.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\PPT.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\PPTX.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\PSD.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\RAR.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\swf.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\tb.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\TXT.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\tz1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\tz2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\WAV.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\wd.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\wd1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\wd2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\wd3.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\wd4.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\WMA.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\WMV.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\XLS.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\XLSX.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\XML.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\qywd\ZIP.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Web\images\qywd\AI.png" />
+    <Content Include="Web\images\qywd\AVI.png" />
+    <Content Include="Web\images\qywd\bf.png" />
+    <Content Include="Web\images\qywd\BMP.png" />
+    <Content Include="Web\images\qywd\CAB.png" />
+    <Content Include="Web\images\qywd\DOC.png" />
+    <Content Include="Web\images\qywd\DOCX.png" />
+    <Content Include="Web\images\qywd\DVD.png" />
+    <Content Include="Web\images\qywd\exe.png" />
+    <Content Include="Web\images\qywd\file.png" />
+    <Content Include="Web\images\qywd\file1.png" />
+    <Content Include="Web\images\qywd\Folder.png" />
+    <Content Include="Web\images\qywd\GIF.png" />
+    <Content Include="Web\images\qywd\gz.png" />
+    <Content Include="Web\images\qywd\hand.png" />
+    <Content Include="Web\images\qywd\HTML.png" />
+    <Content Include="Web\images\qywd\ICO.png" />
+    <Content Include="Web\images\qywd\JAVA.png" />
+    <Content Include="Web\images\qywd\JPG.png" />
+    <Content Include="Web\images\qywd\MP3.png" />
+    <Content Include="Web\images\qywd\MP4.png" />
+    <Content Include="Web\images\qywd\PDF.png" />
+    <Content Include="Web\images\qywd\PNG.png" />
+    <Content Include="Web\images\qywd\PPT.png" />
+    <Content Include="Web\images\qywd\PPTX.png" />
+    <Content Include="Web\images\qywd\PSD.png" />
+    <Content Include="Web\images\qywd\RAR.png" />
+    <Content Include="Web\images\qywd\swf.png" />
+    <Content Include="Web\images\qywd\tb.png" />
+    <Content Include="Web\images\qywd\TXT.png" />
+    <Content Include="Web\images\qywd\tz1.png" />
+    <Content Include="Web\images\qywd\tz2.png" />
+    <Content Include="Web\images\qywd\WAV.png" />
+    <Content Include="Web\images\qywd\wd.png" />
+    <Content Include="Web\images\qywd\wd1.png" />
+    <Content Include="Web\images\qywd\wd2.png" />
+    <Content Include="Web\images\qywd\wd3.png" />
+    <Content Include="Web\images\qywd\wd4.png" />
+    <Content Include="Web\images\qywd\WMA.png" />
+    <Content Include="Web\images\qywd\WMV.png" />
+    <Content Include="Web\images\qywd\XLS.png" />
+    <Content Include="Web\images\qywd\XLSX.png" />
+    <Content Include="Web\images\qywd\XML.png" />
+    <Content Include="Web\images\qywd\ZIP.png" />
     <Content Include="Web\images\rgqyh.png" />
     <Content Include="Web\images\scicon.png" />
     <Content Include="Web\images\script.png" />
     <Content Include="Web\images\searchTip.png" />
-    <Content Include="Web\images\skin\1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\skin1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\skin2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\skin3.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\skin4.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\skin5.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\skin6.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\skin7.JPG">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\skin8.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\images\skin\yc.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Web\images\skin\1.jpg" />
+    <Content Include="Web\images\skin\2.jpg" />
+    <Content Include="Web\images\skin\skin1.png" />
+    <Content Include="Web\images\skin\skin2.png" />
+    <Content Include="Web\images\skin\skin3.png" />
+    <Content Include="Web\images\skin\skin4.png" />
+    <Content Include="Web\images\skin\skin5.png" />
+    <Content Include="Web\images\skin\skin6.jpg" />
+    <Content Include="Web\images\skin\skin7.JPG" />
+    <Content Include="Web\images\skin\skin8.jpg" />
+    <Content Include="Web\images\skin\yc.png" />
     <Content Include="Web\images\sprite.png" />
     <Content Include="Web\images\time-z.png" />
     <Content Include="Web\images\tk_exam.png" />
@@ -616,18 +997,10 @@
     <Content Include="Web\images\yd\yes1.png" />
     <Content Include="Web\images\yd\yes2.png" />
     <Content Include="Web\images\yd\yes3.png" />
-    <Content Include="Web\js\ADDJS.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\avalon1.47.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\bootstrap.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\bootstrap.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Web\js\ADDJS.js" />
+    <Content Include="Web\js\avalon1.47.js" />
+    <Content Include="Web\js\bootstrap.js" />
+    <Content Include="Web\js\bootstrap.min.js" />
     <Content Include="Web\js\chosen\chosen-sprite%402x.png" />
     <Content Include="Web\js\chosen\chosen-sprite.png" />
     <Content Include="Web\js\chosen\chosen.css" />
@@ -654,30 +1027,14 @@
     <Content Include="Web\js\ckplayer\index.html" />
     <Content Include="Web\js\ckplayer\sample\h5.html" />
     <Content Include="Web\js\ckplayer\sample\ios.html" />
-    <Content Include="Web\js\clipboard.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\contextmenu.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\fullteem_doc.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\index.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\indexbz.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\jquery-1.11.1.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\jquery.lazyload.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\jquery.qrcode.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Web\js\clipboard.js" />
+    <Content Include="Web\js\contextmenu.js" />
+    <Content Include="Web\js\fullteem_doc.js" />
+    <Content Include="Web\js\index.js" />
+    <Content Include="Web\js\indexbz.js" />
+    <Content Include="Web\js\jquery-1.11.1.min.js" />
+    <Content Include="Web\js\jquery.lazyload.min.js" />
+    <Content Include="Web\js\jquery.qrcode.min.js" />
     <Content Include="Web\js\layer\extend\layer.ext.js" />
     <Content Include="Web\js\layer\layer.js" />
     <Content Include="Web\js\layer\skin\default\icon - 副本.png" />
@@ -696,15 +1053,9 @@
     <Content Include="Web\js\player\swfobject.js" />
     <Content Include="Web\js\range\range.css" />
     <Content Include="Web\js\range\range.js" />
-    <Content Include="Web\js\SZHLCommon.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\timego.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\toastr.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Web\js\SZHLCommon.js" />
+    <Content Include="Web\js\timego.js" />
+    <Content Include="Web\js\toastr.js" />
     <Content Include="Web\js\ueditor\dialogs\anchor\anchor.html" />
     <Content Include="Web\js\ueditor\dialogs\attachment\attachment.css" />
     <Content Include="Web\js\ueditor\dialogs\attachment\attachment.html" />
@@ -1039,12 +1390,8 @@
     <Content Include="Web\js\umeditor\umeditor.config.js" />
     <Content Include="Web\js\umeditor\umeditor.js" />
     <Content Include="Web\js\umeditor\umeditor.min.js" />
-    <Content Include="Web\js\viewer-jquery.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Web\js\zoomify.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Web\js\viewer-jquery.min.js" />
+    <Content Include="Web\js\zoomify.js" />
     <Content Include="Web\login.html" />
     <Content Include="Web\qj_upload.js" />
     <Content Include="Web\qj_upload.min.js" />
@@ -1073,5 +1420,6 @@
     <Content Include="Web\webuploader\webuploader.withoutimage.js" />
     <Content Include="Web\webuploader\webuploader.withoutimage.min.js" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
