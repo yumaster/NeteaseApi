@@ -83,6 +83,7 @@
     <Compile Include="Repositories\DocumentRepository.cs" />
     <Compile Include="Repositories\IDocumentRepository.cs" />
     <Compile Include="Utils\CommonHelp.cs" />
+    <Compile Include="Utils\MD5Util.cs" />
     <Compile Include="Utils\OfficeUtil.cs" />
   </ItemGroup>
   <ItemGroup>

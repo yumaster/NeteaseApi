@@ -18,7 +18,8 @@ namespace Yumaster.File.Storage.Utils
         {
             get
             {
-                return "qijiekeji2016";
+                //return "qijiekeji2016";
+                return "yumaster.net";
             }
         }
 
@@ -274,10 +275,6 @@ namespace Yumaster.File.Storage.Utils
             }
         }
 
-
-
-
-
         /// <summary>
         /// 获取数字验证码
         /// </summary>
@@ -345,7 +342,6 @@ namespace Yumaster.File.Storage.Utils
             return regex.IsMatch(str1);
         }
 
-
         /// <summary>
         /// 生成一个新的token,并缓存
         /// </summary>
@@ -354,8 +350,6 @@ namespace Yumaster.File.Storage.Utils
         public static string GenerateToken(string userName)
         {
             string token = Guid.NewGuid().ToString();
-
-
             return token;
         }
 
@@ -368,7 +362,6 @@ namespace Yumaster.File.Storage.Utils
                 {
                     Directory.CreateDirectory(path + "/log/");
                 }
-
                 string name = DateTime.Now.ToString("yyyy-MM-dd") + ".txt";
                 if (!System.IO.File.Exists(path + "/log/" + name))
                 {
@@ -376,7 +369,6 @@ namespace Yumaster.File.Storage.Utils
                     FileStream fs = myfile.Create();
                     fs.Close();
                 }
-
                 StreamWriter sw = System.IO.File.AppendText(path + "/log/" + name);
                 sw.WriteLine(err + "\r\n" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 sw.Flush();
@@ -441,14 +433,6 @@ namespace Yumaster.File.Storage.Utils
             return str;
         }
 
-
-
-
-
-
-
-
-
         /// <summary>
         /// 生成流水号格式：8位日期加3位顺序号，如20100302001。
         /// </summary>
@@ -468,17 +452,11 @@ namespace Yumaster.File.Storage.Utils
             return ywcode + "-" + DateTime.Now.ToString("yyyyMMdd") + "001";
         }
 
-
-
-
-
-
-
         ///<summary><![CDATA[字符串DES加密函数]]></summary> 
         ///<param name="str"><![CDATA[被加密字符串 ]]></param> 
         ///<param name="key"><![CDATA[密钥 ]]></param>  
         ///<returns><![CDATA[加密后字符串]]></returns>   
-        public static string Encode(string str, string key = "qijiekeji")
+        public static string Encode(string str, string key = "yumaster")
         {
             try
             {
@@ -504,7 +482,7 @@ namespace Yumaster.File.Storage.Utils
         ///<param name="str"><![CDATA[被解密字符串 ]]></param> 
         ///<param name="key"><![CDATA[密钥 ]]></param>  
         ///<returns><![CDATA[解密后字符串]]></returns>   
-        public static string Decode(string str, string key = "qijiekeji")
+        public static string Decode(string str, string key = "yumaster")
         {
             try
             {
@@ -526,18 +504,6 @@ namespace Yumaster.File.Storage.Utils
             }
             catch (Exception) { return ""; }
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
         /// <summary>
         /// 3des加密字符串
@@ -628,13 +594,7 @@ namespace Yumaster.File.Storage.Utils
 
             return result;
         }
-
-
-
-
-
     }
-
 
     public static class Base64Helper
     {
@@ -742,8 +702,6 @@ namespace Yumaster.File.Storage.Utils
         }
     }
 
-
-
     public static class MyExtensions
     {
 
@@ -834,8 +792,6 @@ namespace Yumaster.File.Storage.Utils
             return sbKeys.Length > 0 ? sbKeys.ToString().TrimEnd(',').Trim('\'') : "";
         }
 
-
-
         /// <summary>
         /// 获取需要IN的格式
         /// </summary>
@@ -851,9 +807,6 @@ namespace Yumaster.File.Storage.Utils
             return sbKeys.Length > 0 ? sbKeys.ToString().TrimEnd(',').Trim('\'') : "";
         }
 
-
-
-
         /// <summary>
         /// 取前N个字符,后面的用省略号代替
         /// </summary>
@@ -861,11 +814,8 @@ namespace Yumaster.File.Storage.Utils
         /// <returns></returns>
         public static string ToMangneStr(this string strKys, int intLenght)
         {
-
             return strKys.Length > intLenght ? strKys.Substring(0, intLenght) + "…………" : strKys;
         }
-
-
 
         public static DataTable ToDataTable<T>(this IEnumerable<T> varlist)
         {
@@ -894,7 +844,6 @@ namespace Yumaster.File.Storage.Utils
                         dtReturn.Columns.Add(new DataColumn(pi.Name, colType));
                     }
                 }
-
                 DataRow dr = dtReturn.NewRow();
 
                 foreach (PropertyInfo pi in oProps)
@@ -920,7 +869,6 @@ namespace Yumaster.File.Storage.Utils
             foreach (DataRow dr in resultRows) resultDt.Rows.Add(dr.ItemArray);
             return resultDt;
         }
-
 
         /// <summary>
         /// Datatable转换为Json
@@ -960,20 +908,15 @@ namespace Yumaster.File.Storage.Utils
             }
             return jsonString.ToString();
         }
-
-
-
         public static int ToInt32(this Object obj)
         {
             return Convert.ToInt32(obj);
         }
 
-
         public static DateTime ToDateTime(this Object obj)
         {
             return Convert.ToDateTime(obj);
         }
-
         public static T GetProperty<T>(this object obj, string propertyName)
         {
             var property = obj.GetType().GetProperty(propertyName);
@@ -983,8 +926,6 @@ namespace Yumaster.File.Storage.Utils
             }
             throw new ArgumentNullException(propertyName);
         }
-
-
 
         /// <summary>
         /// DataTable转成Json
@@ -1090,8 +1031,6 @@ namespace Yumaster.File.Storage.Utils
             return str;
         }
 
-
-
         /// <summary>
         /// 过滤特殊字符
         /// 如果字符串为空，直接返回。
@@ -1132,9 +1071,6 @@ namespace Yumaster.File.Storage.Utils
                 return str;
             }
         }
-
-
-
         /// <summary>   
         /// 根据条件过滤表   
         /// </summary>   
@@ -1143,17 +1079,14 @@ namespace Yumaster.File.Storage.Utils
         /// <returns>返回过滤后的表</returns>   
         public static DataTable FilterTable(this DataTable dt, string filter, string isSJ = "N")
         {
-
             DataTable newTable = dt.Clone();
             DataRow[] drs = dt.Select(filter);
             foreach (DataRow dr in drs)
             {
                 newTable.Rows.Add(dr.ItemArray);
             }
-
             return newTable;
         }
-
 
         /// <summary>
         /// 随机排序
@@ -1162,7 +1095,6 @@ namespace Yumaster.File.Storage.Utils
         /// <returns></returns>
         public static DataTable SJTable(this DataTable newTable)
         {
-
             Random ran = new Random();
             newTable.Columns.Add("sort", typeof(int));
             for (int i = 0; i < newTable.Rows.Count; i++)
@@ -1175,9 +1107,6 @@ namespace Yumaster.File.Storage.Utils
             return newTable;
         }
 
-
-
-
         /// <summary>
         /// 处理生成的DataTable
         /// </summary>
@@ -1187,7 +1116,6 @@ namespace Yumaster.File.Storage.Utils
         /// <returns></returns>
         public static DataTable AddColum(this DataTable DTTable, string addclName, char strChar, params string[] clNames)
         {
-
             DTTable.Columns.Add(addclName);
             for (int i = 0; i < DTTable.Rows.Count; i++)
             {
@@ -1197,9 +1125,7 @@ namespace Yumaster.File.Storage.Utils
                     strTemp = strTemp + DTTable.Rows[i][clNames[m]].ToString() + strChar;
                 }
                 DTTable.Rows[i][addclName] = strTemp.TrimEnd(strChar);
-
             }
-
             return DTTable;
         }
 
@@ -1234,9 +1160,7 @@ namespace Yumaster.File.Storage.Utils
                 }
                 newdt.Rows.Add(newdr);
             }
-
             return newdt;
         }
     }
-
 }
