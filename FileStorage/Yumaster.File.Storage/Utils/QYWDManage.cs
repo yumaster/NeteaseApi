@@ -324,8 +324,8 @@ namespace Yumaster.File.Storage
                         if (new List<string>() { "pdf", "doc", "docx", "ppt", "pptx", "xls", "xlsx" }.Contains(newfile.FileExtendName.ToLower()))
                         {
                             newfile.ISYL = "Y";
-                            newfile.YLUrl = "/ViewV5/AppPage/QYWD/doc.html?zyid=" + newfile.zyid;
-
+                            //newfile.YLUrl = "/ViewV5/AppPage/QYWD/doc.html?zyid=" + newfile.zyid;
+                            newfile.YLUrl = "/Web/Html/Tools/doc.html?zyid=" + newfile.zyid;
                         }
                         if (new List<string>() { "mp4" }.Contains(newfile.FileExtendName.ToLower()))
                         {
