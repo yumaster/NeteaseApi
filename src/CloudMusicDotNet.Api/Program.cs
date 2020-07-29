@@ -17,10 +17,6 @@ namespace CloudMusicDotNet.Api
             {
                 config.SetBasePath(hostingContext.HostingEnvironment.ContentRootPath).AddJsonFile("api.json", true, true);
             })
-            .UseKestrel(opts =>
-            {
-                opts.Limits.MaxRequestBodySize = 524288000;
-            })
             .UseIISIntegration()
             .UseStartup<Startup>();
     }

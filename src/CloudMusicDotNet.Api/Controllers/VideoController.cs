@@ -8,14 +8,17 @@ using System.Threading.Tasks;
 
 namespace CloudMusicDotNet.Api.Controllers
 {
+    /// <summary>
+    /// 视频相关
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    public class VidoeController : ControllerBase
+    public class VideoController : ControllerBase
     {
         private readonly IVideoService _videoService;
         private readonly IDtoParseService _dtoParseService;
 
-        public VidoeController(
+        public VideoController(
             IVideoService videoService,
             IDtoParseService dtoParseService)
         {
