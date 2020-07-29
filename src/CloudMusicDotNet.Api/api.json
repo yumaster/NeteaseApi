@@ -1,0 +1,438 @@
+{
+  "NewAlubm": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/album/new"
+  },
+  "AlubmHot": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/api/discovery/newAlbum"
+  },
+  "SubAlubm": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/album/sublist"
+  },
+  "AlubmContent": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/album/"
+  },
+  "ArtistAlbums": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/artist/albums/"
+  },
+  "ArtistDesc": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/artist/introduction"
+  },
+  "ArtistList": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/artist/list"
+  },
+  "ArtistMvs": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/artist/mvs"
+  },
+  "ArtistSub": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/artist/"
+  },
+  "ArtistSong": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/artist/"
+  },
+  "ArtistTop": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/artist/top"
+  },
+  "MusicComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/resource/comments/R_SO_4_"
+  },
+  "AlbumComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/resource/comments/R_AL_3_"
+  },
+  "PlaylistComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/resource/comments/A_PL_0_"
+  },
+  "MvComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/resource/comments/R_MV_5_"
+  },
+  "DjComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/resource/comments/A_DJ_1_"
+  },
+  "VideoComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/resource/comments/R_VI_62_"
+  },
+  "HotComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/resource/hotcomments/"
+  },
+  "LikeComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/comment/"
+  },
+  "EventComment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/resource/comments/"
+  },
+  "Comment": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/resource/comments/"
+  },
+  "DjBanner": {
+    "Crypto": "weapi",
+    "Url": "http://music.163.com/weapi/djradio/banner/get"
+  },
+  "DjExcludeHot": {
+    "Crypto": "weapi",
+    "Url": "http://music.163.com/weapi/djradio/category/excludehot"
+  },
+  "DjRecommendCategory": {
+    "Crypto": "weapi",
+    "Url": "http://music.163.com/weapi/djradio/home/category/recommend"
+  },
+  "DjCategory": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/djradio/category/get"
+  },
+  "DjDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/djradio/get"
+  },
+  "DjHot": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/djradio/hot/v1"
+  },
+  "DjPaygift": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/djradio/home/paygift/list?_nmclfl=1"
+  },
+  "DjProgram": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/dj/program/byradio"
+  },
+  "DjProgramDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/dj/program/detail"
+  },
+  "DjRecommend": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/djradio/recommend/v1"
+  },
+  "DjTypeRecommend": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/djradio/recommend"
+  },
+  "DjSub": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/djradio/"
+  },
+  "DjSublist": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/djradio/get/subed"
+  },
+  "DjTodayPerfered": {
+    "Crypto": "weapi",
+    "Url": "http://music.163.com/weapi/djradio/home/today/perfered"
+  },
+  "CommentsMsg": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/api/v1/user/comments/"
+  },
+  "ForwardsMsg": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/api/forwards/get"
+  },
+  "NoticesMsg": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/api/msg/notices"
+  },
+  "PrivateMsg": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/api/msg/private/users"
+  },
+  "PrivateHistoryMsg": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/api/msg/private/history"
+  },
+  "MvDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/mv/detail"
+  },
+  "MvFirst": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/mv/first"
+  },
+  "MvSub": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/mv/"
+  },
+  "MvSublist": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/cloudvideo/allvideo/sublist"
+  },
+  "MvUrl": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/song/enhance/play/mv/url"
+  },
+  "MvTopList": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/mv/toplist"
+  },
+  "EventDel": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/eapi/event/delete"
+  },
+  "EventForward": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/event/forward"
+  },
+  "PersonalizedDj": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/personalized/djprogram"
+  },
+  "PersonalizedMv": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/personalized/mv"
+  },
+  "PersonalizedNewSong": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/personalized/newsong"
+  },
+  "PrivateContent": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/personalized/privatecontent"
+  },
+  "PersonalizedPlayList": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/personalized/playlist"
+  },
+  "PersonalizedProgram": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/program/recommend/v1"
+  },
+  "PlaylistCategories": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/playlist/catalogue"
+  },
+  "PlaylistCreate": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/playlist/create"
+  },
+  "PlaylistDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v3/playlist/detail"
+  },
+  "PlaylistHotTags": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/playlist/hottags"
+  },
+  "PlaylistSubscribe": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/playlist/"
+  },
+  "PlaylistSubscribers": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/playlist/subscribers"
+  },
+  "PlaylistTracks": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/playlist/manipulate/tracks"
+  },
+  "PlaylistUpdate": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/batch"
+  },
+  "PlaylistTop": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v3/playlist/detail"
+  },
+  "Playlist": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/playlist/list"
+  },
+  "HighQuality": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/playlist/highquality/list"
+  },
+  "Search": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/search/get"
+  },
+  "SearchHot": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/search/hot"
+  },
+  "SearchMultimatch": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/search/suggest/multimatch"
+  },
+  "SearchSuggest": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/search/suggest/"
+  },
+  "SimiArtist": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/discovery/simiArtist"
+  },
+  "SimiMv": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/discovery/simiMV"
+  },
+  "SimiPlaylist": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/discovery/simiPlaylist"
+  },
+  "SimiSong": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/discovery/simiSong"
+  },
+  "SimiUser": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/discovery/simiUser"
+  },
+  "SongDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v3/song/detail"
+  },
+  "SongUrl": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/song/enhance/player/url"
+  },
+  "SongCheck": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/song/enhance/player/url"
+  },
+  "SongLyric": {
+    "Crypto": "linuxapi",
+    "Url": "https://music.163.com/weapi/song/lyric?lv=-1&kv=-1&tv=-1"
+  },
+  "SongLikeList": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/song/like/get"
+  },
+  "SongNew": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/discovery/new/songs"
+  },
+  "ToplistArtist": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/toplist/artist"
+  },
+  "ToplistDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/toplist/detail"
+  },
+  "Toplist": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/toplist"
+  },
+  "VideoDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/cloudvideo/v1/video/detail"
+  },
+  "VideoGroup": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/videotimeline/videogroup/get"
+  },
+  "VideoSub": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/cloudvideo/video/"
+  },
+  "VideoUrl": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/cloudvideo/playurl"
+  },
+  "UserDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/user/detail/"
+  },
+  "UserDj": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/dj/program/"
+  },
+  "UserEvent": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/event/get/"
+  },
+  "UserFollowers": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/user/getfolloweds"
+  },
+  "UserFollows": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/user/getfollows/"
+  },
+  "UserFollow": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/user/"
+  },
+  "UserPlaylist": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/user/playlist"
+  },
+  "UserRecord": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/play/record"
+  },
+  "UserSubCount": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/subcount"
+  },
+  "UserUpdate": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/user/profile/update"
+  },
+  "Cloud": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/cloud/get"
+  },
+  "CloudDetail": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/cloud/get/byids"
+  },
+  "CloudDelete": {
+    "Crypto": "weapi",
+    "Url": "http://music.163.com/weapi/cloud/del"
+  },
+  "Login": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/login"
+  },
+  "PhoneLogin": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/login/cellphone"
+  },
+  "Register": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/register/cellphone"
+  },
+  "SentCaptcha": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/sms/captcha/sent"
+  },
+  "VerifyCaptcha": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/sms/captcha/verify"
+  },
+  "Status": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com"
+  },
+  "Refresh": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/login/token/refresh"
+  },
+  "RecommendSongs": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/discovery/recommend/songs"
+  },
+  "RecommendResource": {
+    "Crypto": "weapi",
+    "Url": "https://music.163.com/weapi/v1/discovery/recommend/resource"
+  }
+}
