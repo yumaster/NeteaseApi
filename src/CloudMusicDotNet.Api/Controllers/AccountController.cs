@@ -25,10 +25,17 @@ namespace CloudMusicDotNet.Api.Controllers
         /// 邮箱登录
         /// </summary>
         /// <returns></returns>
+        //[HttpPost("Login")]
+        //public async Task<IActionResult> Login(LoginDto loginDto)
+        //{
+        //    var result = await _accountService.Login(loginDto.Email, loginDto.Password);
+
+        //    return Content(result, "application/json");
+        //}
         [HttpPost("Login")]
-        public async Task<IActionResult> Login(LoginDto loginDto)
+        public async Task<IActionResult> Login(string email,string pwd)
         {
-            var result = await _accountService.Login(loginDto.Email, loginDto.Password);
+            var result = await _accountService.Login(email, pwd);
 
             return Content(result, "application/json");
         }
