@@ -8,17 +8,20 @@ using CloudMusicDotNet.Commons.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using yumaster.Util;
 
 namespace CloudMusicDotNet.Api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration,IWebHostEnvironment env)
         {
             Configuration = configuration;
+            GlobalContext.LogWhenStart(env);
         }
 
         public IConfiguration Configuration { get; }
@@ -60,7 +63,10 @@ namespace CloudMusicDotNet.Api
 
             services.AddTransient<IDtoParseService, DtoParseService>();
 
+            GlobalContext.SystemConfig = Configuration.GetSection("SystemConfig").Get<SystemConfig>();
+
             var builder = new ContainerBuilder();
+
             builder.Populate(services);
 
             builder.RegisterAssemblyTypes(typeof(IAlbumService).GetTypeInfo().Assembly)
@@ -83,7 +89,13 @@ namespace CloudMusicDotNet.Api
                 c.RoutePrefix = string.Empty;
             });
             app.UseRouting();
-            //app.UseMvc();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
+            });
         }
     }
 }

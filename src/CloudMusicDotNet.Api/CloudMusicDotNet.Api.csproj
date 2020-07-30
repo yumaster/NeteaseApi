@@ -9,11 +9,49 @@
   <ItemGroup>
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CloudMusicDotNet.Commons\CloudMusicDotNet.Commons.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="yumaster.Business">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Data">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Data.EF">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Data.EF.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Data.Repository">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Data.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Entity">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Enum">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Enum.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.IdGenerator">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.IdGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Model">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Service">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Util">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="yumaster.Web.Code">
+      <HintPath>bin\Debug\netcoreapp3.1\yumaster.Web.Code.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>

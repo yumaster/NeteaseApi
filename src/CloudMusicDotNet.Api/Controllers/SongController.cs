@@ -11,6 +11,7 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/simi")]
     [ApiController]
+    [AuthorizeFilter]
     public class SongController : ControllerBase
     {
         private readonly ISongService _songService;

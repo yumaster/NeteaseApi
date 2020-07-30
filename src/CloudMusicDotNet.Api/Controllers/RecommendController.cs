@@ -9,6 +9,7 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AuthorizeFilter]
     public class RecommendController : ControllerBase
     {
         private readonly IRecommendService _recommendService;
