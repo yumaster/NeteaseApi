@@ -33,7 +33,7 @@ namespace CloudMusicDotNet.Api.Controllers
         //    return Content(result, "application/json");
         //}
         [HttpPost("Login")]
-        public async Task<IActionResult> Login(string email,string pwd)
+        public async Task<IActionResult> Login(string email, string pwd)
         {
             var result = await _accountService.Login(email, pwd);
 

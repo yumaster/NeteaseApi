@@ -57,9 +57,15 @@ namespace CloudMusicDotNet.Api
 
             services.AddHttpContextAccessor();
 
-            services.AddTransient<HttpClientCookieDelegatingHandler>();
-            services.AddHttpClient("CloudMusic")
-                .AddHttpMessageHandler<HttpClientCookieDelegatingHandler>();
+            //services.AddHttpClient("CloudMusic")
+            //    .AddHttpMessageHandler<HttpClientCookieDelegatingHandler>();
+
+            services.AddHttpClient();
+            services.AddHttpClient("CloudMusic", c =>
+            {
+                //c.BaseAddress = new Uri("https://music.163.com");
+                c.DefaultRequestHeaders.Add("Referer", "https://music.163.com");
+            });
 
             services.AddTransient<IDtoParseService, DtoParseService>();
 
