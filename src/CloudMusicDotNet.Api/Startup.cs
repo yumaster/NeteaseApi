@@ -33,7 +33,8 @@ namespace CloudMusicDotNet.Api
         /// <returns></returns>
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddCors(option => option.AddPolicy("AllowAll", policy => policy.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins(new []{ "https://music.163.com" })));
+
             services.AddMvc();
             services.AddSwaggerGen(c =>
             {
@@ -88,6 +89,7 @@ namespace CloudMusicDotNet.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors("AllowAll");
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {

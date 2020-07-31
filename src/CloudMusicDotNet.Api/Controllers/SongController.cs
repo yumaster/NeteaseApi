@@ -30,7 +30,7 @@ namespace CloudMusicDotNet.Api.Controllers
         /// </summary>
         /// <param name="ids">音乐 id</param>
         /// <returns></returns>
-        [HttpGet("Detail")]
+        [HttpGet("Detail/{ids}")]
         public async Task<IActionResult> Detail(string ids)
         {
             string c = string.Join(',', ids.Split(',').Select(id => "{\"id\":" + id + "}"));
