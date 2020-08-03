@@ -33,8 +33,15 @@ namespace CloudMusicDotNet.Api
         /// <returns></returns>
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(option => option.AddPolicy("AllowAll", policy => policy.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins(new []{ "https://music.163.com" })));
+            services.AddQueuePolicy(options =>
+            {
+                //最大并发请求数
+                options.MaxConcurrentRequests = 2;
+                //请求队列长度限制
+                options.RequestQueueLimit = 1000;
+            });
 
+            services.AddCors(option => option.AddPolicy("AllowAll", policy => policy.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins(new []{ "https://music.163.com" })));
             services.AddMvc();
             services.AddSwaggerGen(c =>
             {
@@ -85,6 +92,9 @@ namespace CloudMusicDotNet.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            //添加并发限制中间件
+            app.UseConcurrencyLimiter();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
