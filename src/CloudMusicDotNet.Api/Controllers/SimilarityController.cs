@@ -10,7 +10,6 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/simi")]
     [ApiController]
-    [AuthorizeFilter]
     public class SimilarityController : ControllerBase
     {
         private readonly ISimilarityService _similarityService;

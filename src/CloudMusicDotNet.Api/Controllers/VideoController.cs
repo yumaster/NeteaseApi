@@ -13,7 +13,6 @@ namespace CloudMusicDotNet.Api.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [AuthorizeFilter]
     public class VideoController : ControllerBase
     {
         private readonly IVideoService _videoService;

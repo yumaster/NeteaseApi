@@ -11,7 +11,6 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AuthorizeFilter]
     public class MsgController : ControllerBase
     {
         private readonly IMsgService _msgService;

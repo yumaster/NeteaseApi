@@ -10,7 +10,6 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AuthorizeFilter]
     public class CloudController : ControllerBase
     {
         private readonly ICloudService _cloudService;

@@ -10,4 +10,10 @@
     <PackageReference Include="Portable.BouncyCastle" Version="1.8.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="yumaster.Util">
+      <HintPath>..\CloudMusicDotNet.Api\bin\Debug\netcoreapp3.1\yumaster.Util.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

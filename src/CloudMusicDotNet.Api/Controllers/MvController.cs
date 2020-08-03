@@ -11,7 +11,6 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AuthorizeFilter]
     public class MvController : ControllerBase
     {
 

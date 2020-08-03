@@ -12,7 +12,6 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AuthorizeFilter]
     public class ArtistController : ControllerBase
     {
         private readonly IArtistService _artistService;

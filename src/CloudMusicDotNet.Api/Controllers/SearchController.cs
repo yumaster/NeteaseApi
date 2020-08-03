@@ -10,7 +10,6 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AuthorizeFilter]
     public class SearchController : ControllerBase
     {
         private readonly ISearchService _searchService;

@@ -12,7 +12,6 @@ namespace CloudMusicDotNet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AuthorizeFilter]
     public class PlaylistController : ControllerBase
     {
         private readonly IPlaylistService _playlistService;

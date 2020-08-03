@@ -13,7 +13,6 @@ namespace CloudMusicDotNet.Api.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [AuthorizeFilter]
     public class PersonalizedController : ControllerBase
     {
         private readonly IPersonalizedService _personalizedService;
